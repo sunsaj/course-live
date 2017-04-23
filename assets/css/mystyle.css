@@ -1,0 +1,141 @@
+
+#validate{
+ text-decoration: none;
+ color: red;
+ padding:2em;   
+ margin-bottom: 0px;
+ padding-bottom: 0em;
+}
+
+.post-thumb{
+    width:100%;
+}
+
+
+.sub-btn{
+    color: #fff;
+    background-color: #123456;
+    margin-bottom: 14px;
+}
+
+.notice{
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 10px;
+    text-decoration-color: none;
+}
+
+
+#forum{
+    background-color: #ffc;
+    padding: 2em;
+    border-radius: 10px;
+    text-decoration-color: none;
+}
+
+
+
+#notice-content{
+	border-radius: 12px;
+	background-color: #fff;
+	margin: 4px;
+	padding: 20px;
+}
+
+
+#page-title{
+    padding: 10px;
+	
+}
+
+.notice-date{
+	padding:4px;
+	margin:3px 0;
+	display:block;
+}
+
+
+#delete-btn{
+    margin-right: 1em;
+}
+
+#edit-btn{
+    margin-right: 1em;
+}
+
+
+/**********************************************
+
+modal
+
+*******************************************/
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
