@@ -1,13 +1,15 @@
 <?php
 	class User_model extends CI_Model{
 		public function register($enc_password){
+			
 			// User data array
 			$data = array(
 				'firstname' => $this->input->post('fname'),
 				'lastname' => $this->input->post('lname'),
 				'email' => $this->input->post('email'),
                 'username' => $this->input->post('username'),
-                'password' => $enc_password
+                'password' => $enc_password,
+                'role' =>$this->input->post('role')
 			);
 
 			// Insert user
@@ -23,7 +25,8 @@
 			$result = $this->db->get('user');
 
 			if($result->num_rows() == 1){
-				return $result->row(0)->usr_id;
+			
+				return $result->row_array();
 			} else {
 				return false;
 			}

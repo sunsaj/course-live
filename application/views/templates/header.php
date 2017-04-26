@@ -44,7 +44,7 @@
                   <div class="fa fa-bars tooltips" data-placement="right" data-original-title="Toggle Navigation"></div>
               </div>
             <!--logo start-->
-            <a  href="<?php echo base_url(); ?>pages" class="logo"><img src="<?php echo base_url(); ?>assets/img/logo.jpg"></img>
+            <a  href="<?php echo base_url(); ?>posts" class="logo"><img src="<?php echo base_url(); ?>assets/img/logo.jpg"></img>
             <!--logo end-->
          
             <div class="top-menu">
@@ -67,7 +67,7 @@
               	  <p class="centered"><a href="<?php echo base_url(); ?>posts"><img src="<?php echo base_url(); ?>assets/img/ui-sam.jpg" class="img-circle" width="60"></a></p>
                   
 
-              	  <h5 class="centered"><?php echo $this->session->userdata['username'] ?></h5>
+              	  <h5 class="centered"><?php echo $this->session->userdata['name'] ?></h5>
               	  	
                   <li class="sub-menu">
                       <a href="javascript:;" >

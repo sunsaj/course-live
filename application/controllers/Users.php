@@ -45,15 +45,20 @@
 				$password = md5($this->input->post('password'));
 
 				// Login user
-				$user_id = $this->user_model->login($username, $password);
+				$user= $this->user_model->login($username, $password);
+				$name = $user['firstname'].' '.$user['lastname'];
 
-				if($user_id){
+				if($user){
 					// Create session
 					$user_data = array(
-						'user_id' => $user_id,
+						'user_id' => $user['usr_id'],
 						'username' => $username,
+						'role' =>$user['role'],
+						'name' =>$name,
 						'logged_in' => true
+
 					);
+					
 
 					$this->session->set_userdata($user_data);
 

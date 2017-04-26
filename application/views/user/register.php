@@ -57,14 +57,20 @@
 		            <input type="text" class="form-control" name= "username" placeholder="Username" autofocus>
 		            <br>
 
+		            <select class="form-control" name="role" >
+						  <option value="1">Student</option>
+						  <option value="2">Teacher</option>
+						  
+					</select>
+						<br>
+
 		           <input type="password" class="form-control" name= "password" placeholder="Password">
-		            <label class="checkbox">
-		                <span class="pull-right"></span>
-		            </label>
+		           <br>
+		         
 		            <input type="password" class="form-control" name= "password2" placeholder="Confirm Password">
-		            <label class="checkbox">
-		                <span class="pull-right"> </span>
-		            </label>
+		           
+		            <br>
+						
 		            <button class="btn btn-theme btn-block" href="index.html" type="submit"><i class="fa fa-lock"></i> Register</button>
 		          
 		       		
